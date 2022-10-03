@@ -11,15 +11,17 @@ html {
 
 body {
     font-family: Helvetica LT W05 Bold, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
 /* start header */
-header {
+nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
     box-shadow: 0 1px 8px #ddd;
+    
 }
 
 #nav-title {
@@ -28,16 +30,30 @@ header {
     color: #0066ff;
 }
 
-header nav ul li {
+nav ul {
+    display: flex;
     list-style: none;
-    display: inline-block;
-    padding: 0 15px;
+    width: 40%;
+    justify-content: space-around;
 }
 
-header nav ul li a {
+nav ul li a {
     text-decoration: none;
     color: #070F18;
     transition: 0.2s linear;
+}
+
+nav ul li a:hover {
+    color: #0066ff;
+    padding-bottom: 0.4rem;
+    border-bottom: 0.1rem solid #0066ff;
+}
+
+header nav ul li:not(:last-child) a {
+    display: inline-block;
+    padding: 9px 18px;
+    line-height: 1.2;
+    font-weight:500;
 }
 
 header nav ul li:not(:last-child) a:hover {
@@ -63,6 +79,136 @@ header nav ul li:last-child a:hover {
     transition: 0.4s all;
     border: 1px solid transparent;
 }
+
+/* Hamburger Menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    left: -11px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #0066ff;
+    border-radius: 3px;
+    transition: all .5s;
+}
+
+
+/* hamburger menu animation */
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:last-child {
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+    background-color: #0066ff;
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+    background-color: #0066ff;
+    transform: rotate(-45deg) translate(-1px, 0px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+}
+
+/* Responsive Breeakpoint */
+
+/* ukuran tablet */
+@media screen and (max-width: 768px) {
+    nav ul {
+        width: 50%;
+    }
+}
+
+/* ukuran mobile */
+@media screen and (max-width: 576px) {
+    .menu-toggle {
+        display: flex;
+        z-index: 10;
+    }
+
+    nav ul {
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 80%;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #0066ff;
+        z-index: 1;
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+
+    nav ul.slide {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    nav ul li a {
+        color: rgba(255, 255, 255, 0.75);
+    }
+    
+    nav ul li a:hover {
+        color: white;
+        border-bottom: 0.1rem solid white;
+    }
+    
+    header nav ul li:not(:last-child) a:hover {
+        color: rgba(255, 255, 255, 0.75);
+        border-bottom: 0.1rem solid white;
+    }
+
+    .menu-toggle input:checked ~ span:nth-child(2) {
+        background-color: white;
+    }
+    
+    .menu-toggle input:checked ~ span:nth-child(4) {
+        background-color: white;
+    }
+
+    header nav ul li:last-child a {
+        border: 1px solid rgba(255, 255, 255, 0.75);
+        color: rgba(255, 255, 255, 0.75);
+    }
+    
+    header nav ul li:last-child a:hover {
+        color: white;
+        background: #0066ff;
+        border: 1px solid white;
+        transition: 0.2s all;
+    }
+}
+
+
+
+
 
 /* end header */
 
