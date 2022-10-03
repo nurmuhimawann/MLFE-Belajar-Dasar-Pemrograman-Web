@@ -133,84 +133,8 @@ header nav ul li:last-child a:hover {
     opacity: 0;
     transform: scale(0);
 }
-
-/* Responsive Breeakpoint */
-
-/* ukuran tablet */
-@media screen and (max-width: 768px) {
-    nav ul {
-        width: 50%;
-    }
-}
-
-/* ukuran mobile */
-@media screen and (max-width: 576px) {
-    .menu-toggle {
-        display: flex;
-        z-index: 10;
-    }
-
-    nav ul {
-        position: fixed;
-        right: 0;
-        top: 0;
-        width: 80%;
-        height: 100vh;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        background-color: #0066ff;
-        z-index: 1;
-        transform: translateX(100%);
-        transition: all 1s;
-        opacity: 0;
-    }
-
-    nav ul.slide {
-        transform: translateX(0);
-        opacity: 1;
-    }
-
-    nav ul li a {
-        color: rgba(255, 255, 255, 0.75);
-    }
-    
-    nav ul li a:hover {
-        color: white;
-        border-bottom: 0.1rem solid white;
-    }
-    
-    header nav ul li:not(:last-child) a:hover {
-        color: rgba(255, 255, 255, 0.75);
-        border-bottom: 0.1rem solid white;
-    }
-
-    .menu-toggle input:checked ~ span:nth-child(2) {
-        background-color: white;
-    }
-    
-    .menu-toggle input:checked ~ span:nth-child(4) {
-        background-color: white;
-    }
-
-    header nav ul li:last-child a {
-        border: 1px solid rgba(255, 255, 255, 0.75);
-        color: rgba(255, 255, 255, 0.75);
-    }
-    
-    header nav ul li:last-child a:hover {
-        color: white;
-        background: #0066ff;
-        border: 1px solid white;
-        transition: 0.2s all;
-    }
-}
-
-
-
-
-
 /* end header */
+
 
 /* start jumbotron */
 main .container {
@@ -428,6 +352,73 @@ button.primary.ghost {
 /* end aside */
 /* end content */
 
+/* start card my fav */
+.title-card h1 {
+    margin: 70px 0 0 0;
+    font-size: 2.8rem;
+    text-align: center;
+    color: black;
+}
+
+.title-card h1 span {
+    color: #0066ff;
+}
+
+.flex-card {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 3rem 2rem;
+}
+
+.flex-card .card {
+    height: 350px;
+    margin: 50px 50px;
+    flex: 25%;
+    background-color: #0066ff;
+    text-align: center;
+    padding-top: 30px;
+    max-width: 300px;
+    border-radius: 5px;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.5);
+    
+}
+
+.card img {
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+.card h3 {
+    color: white;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 15px;
+    text-align: center;
+    margin-top: 20px;
+    border-bottom: 1px solid white;
+}
+
+.info-artist ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 30px;
+}
+
+.info-artist ul li a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 9px 18px;
+}
+
+
+
+/* end card my fav */
 
 
 /* start contact */
@@ -526,3 +517,88 @@ footer {
     font-size: 18px;
 }
 /* end footer */
+
+
+/* Responsive Breeakpoint */
+
+/* ukuran tablet */
+@media screen and (max-width: 768px) {
+    nav ul {
+        width: 50%;
+    }
+}
+
+/* ukuran mobile */
+@media screen and (max-width: 576px) {
+
+    /* start toggle */
+    .menu-toggle {
+        display: flex;
+        z-index: 10;
+    }
+
+    nav ul {
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 80%;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #0066ff;
+        z-index: 1;
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+
+    nav ul.slide {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    nav ul li a {
+        color: rgba(255, 255, 255, 0.75);
+    }
+    
+    nav ul li a:hover {
+        color: white;
+        border-bottom: 0.1rem solid white;
+    }
+    
+    header nav ul li:not(:last-child) a:hover {
+        color: rgba(255, 255, 255, 0.75);
+        border-bottom: 0.1rem solid white;
+    }
+
+    .menu-toggle input:checked ~ span:nth-child(2) {
+        background-color: white;
+    }
+    
+    .menu-toggle input:checked ~ span:nth-child(4) {
+        background-color: white;
+    }
+
+    header nav ul li:last-child a {
+        border: 1px solid rgba(255, 255, 255, 0.75);
+        color: rgba(255, 255, 255, 0.75);
+    }
+    
+    header nav ul li:last-child a:hover {
+        color: white;
+        background: #0066ff;
+        border: 1px solid white;
+        transition: 0.2s all;
+    }
+    /* end toggle */
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (min-width: 576px) { ... }
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) { ... }
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) { ... }
