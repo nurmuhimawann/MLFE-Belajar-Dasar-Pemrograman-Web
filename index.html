@@ -26,16 +26,14 @@
     <header>
         <nav>
             <div class="logo">
-                <h1 id="nav-title">nurmuhimawann</h1>
+                <h1 class="nav-title">nurmuhimawann</h1>
             </div>
-
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-                <li id="btn"><a href="#">Say, hi👋🏻</a></li>
+                <li><a href="#satu">About</a></li>
+                <li><a href="#tiga">ContactMe</a></li>
+                <li id="btn"><a href="#">Say,hi👋🏻</a></li>
             </ul>
-
             <div class="menu-toggle">
                 <input type="checkbox" name="" id="">
                 <span></span>
@@ -50,7 +48,7 @@
     <main>
         <!-- start jumbotron -->
         <section>
-            <div class="container">
+            <div class="container" id="jumbotron">
                 <div class="text-title">
                     <h1>Hi there, <span class="input"></span><br>
                         Glad to see you here!
@@ -74,159 +72,110 @@
 
         <!-- start about me -->
         <section>
-            <h1 id="about">About Me</h1>
-            <div class="content">
-
-                <!-- start card aside -->
-                <section>
-                    <aside>
-                        <div class="card">
-                            <div class="card-container">
-                                <span class="tag">Hello</span>
-                                <img class="round" src="assets/img/foto-profile.png" alt="mawan" />
-                                <h3>Nur Muhammad Himawan</h3>
-                                <h6>Banyuwangi</h6>
-                                <p>Information System Student at <br /> University of Jember</p>
-                                <div class="buttons">
-                                    <button class="primary">
-                                        Message
-                                    </button>
-                                    <button class="primary ghost">
-                                        Following
-                                    </button>
-                                </div>
-                                <div class="skills">
-                                    <h6>Skills</h6>
-                                    <ul>
-                                        <li>Graphic Design</li>
-                                        <li>Machine Learning Basics</li>
-                                        <li>Teamwork</li>
-                                        <li>Creativity Skills</li>
-                                        <li>Problem Solving</li>
-                                    </ul>
+            <div class="content" id="satu">
+                <h1 id="about">About <span>Me</span></h1>
+                <div class="flex-container-satu">
+                    <!-- start card aside -->
+                    <section>
+                        <aside>
+                            <div class="card-profile">
+                                <div class="card-container">
+                                    <span class="tag">Hello</span>
+                                    <img class="round" src="assets/img/foto-profile.png" alt="mawan" />
+                                    <h3>Nur Muhammad Himawan</h3>
+                                    <h6>Banyuwangi</h6>
+                                    <p>Information System Student at <br /> University of Jember</p>
+                                    <div class="buttons">
+                                        <button class="primary" id="email-card">
+                                            E-mail
+                                        </button>
+                                        <button class="primary ghost" id="nomor-card">
+                                            No. Telepon
+                                        </button>
+                                    </div>
+                                    <div class="skills">
+                                        <h6>Skills</h6>
+                                        <ul>
+                                            <li>Graphic Design</li>
+                                            <li>Teamwork</li>
+                                            <li>Creativity Skills</li>
+                                            <li>Problem Solving</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
+                        </aside>
+                    </section>
+                    <!-- end card aside -->
+
+                    <!-- start content txt -->
+                    <section>
+                        <div class="text-content">
+                            <div class="text">
+                                <article>
+                                    <h5><img src="assets/img/tick.png" alt="">Me</h5>
+                                    <p>
+                                        Hello everyone, my name is Nur Muhammad Himawan. you can call me mawan. I'm from
+                                        Banyuwangi
+                                        and currently studying in the Information Systems, Faculty of Computer Science,
+                                        University
+                                        of Jember.
+                                    </p>
+                                </article> <br>
+                                <article>
+                                    <h5><img src="assets/img/tick.png" alt="">My Experience</h5>
+                                    <p>
+                                        <strong>&#x2022 Project Manager at CV. Dana Indo Agri, Perum Permai
+                                            Jember</strong>
+                                        <br>
+                                        CV. Dana Indo Agri is one of the producers of organic and biological fertilizers
+                                        located in
+                                        the Jember. The fertilizer products produced are of high quality in order to
+                                        achieve
+                                        abundant and quality agricultural productivity for farmers. As a project manager
+                                        as
+                                        well as
+                                        a scrum master, I am responsible for developing an online sales management
+                                        information
+                                        system project and a company profile website for CV. Dana Indo Agri, Jember.
+                                        <br>
+                                        <br>
+                                        <strong>&#x2022 Staff Muda of Extern Division in Intern and Extern Department at
+                                            BEM
+                                            Fasilkom</strong> <br>
+                                        joined as young staff, to establish relationships in the form of cooperation or
+                                        sponsorship
+                                        and build a good image by external parties as well as improve harmony and
+                                        healthy
+                                        communication between members in the organization.
+                                    </p> <br>
+                                </article>
+                            </div>
                         </div>
-                    </aside>
-                </section>
-                <!-- end card aside -->
-
-                <!-- start content txt -->
-                <section>
-                    <div class="text-content">
-                        <article>
-                            <h5><img src="assets/img/tick.png" alt="">Me</h5>
-                            <p>
-                                Hello everyone, my name is Nur Muhammad Himawan. you can call me mawan. I'm from
-                                Banyuwangi
-                                and currently studying in the Information Systems, Faculty of Computer Science,
-                                University
-                                of Jember.
-                            </p> <br>
-                        </article>
-
-                        <article>
-                            <h5><img src="assets/img/tick.png" alt="">My Experience</h5>
-                            <p>
-                                <strong>&#x2022 Project Manager at CV. Dana Indo Agri, Perum Permai Jember</strong>
-                                <br>
-                                CV. Dana Indo Agri is one of the producers of organic and biological fertilizers
-                                located in
-                                the Jember. The fertilizer products produced are of high quality in order to achieve
-                                abundant and quality agricultural productivity for farmers. As a project manager as
-                                well as
-                                a scrum master, I am responsible for developing an online sales management
-                                information
-                                system project and a company profile website for CV. Dana Indo Agri, Jember. <br>
-                                <br>
-
-                                <strong>&#x2022 Staff Muda of Extern Division in Intern and Extern Department at BEM
-                                    Fasilkom</strong> <br>
-                                joined as young staff, to establish relationships in the form of cooperation or
-                                sponsorship
-                                and build a good image by external parties as well as improve harmony and healthy
-                                communication between members in the organization.
-                            </p> <br>
-                        </article>
-
-                        <!-- start corner image -->
-                        <div class="corner">
-                            <img src="assets/img/corner-image.gif" alt="corner-image">
-                        </div>
-                    </div>
-                    <!-- end corner image -->
-                </section>
-                <!-- end content txt -->
+                    </section>
+                    <!-- end content txt -->
+                </div>
             </div>
         </section>
         <!-- end about me -->
 
 
         <!-- start my fav -->
-
         <section>
-            <div class="title-card">
-                <h1>My Favorite <span>Artist</span></h1>
-            </div>
-            <div class="flex-card" id="artist-cards-container">
-                <!-- <div class="card 1">
-                    <img src="assets/img/1.png" class="user" alt="" />
-                    <h3>Ariana Grandong</h3>
-                    <div class="info-artist">
-                        <ul>
-                            <li class="socmed"><a href="https://www.instagram.com/arianagrande/">Instagram</a></li>
-                            <li class="socmed"><a href="https://www.youtube.com/c/ArianaGrande/">Youtube</a></li>
-                        </ul>
-                    </div>
+            <div class="content" id="dua">
+                <div class="title-card">
+                    <h1>My Favorite <span>Artist</span></h1>
                 </div>
-                <div class="card 2">
-                    <img src="assets/img/2.png" class="user" alt="" />
-                    <h3>Justin Geber</h3>
-                    <div class="info-artist">
-                        <ul>
-                            <li class="socmed"><a href="https://www.instagram.com/justinbieber/">Instagram</a></li>
-                            <li class="socmed"><a href="https://www.youtube.com/c/justinbieber/">Youtube</a></li>
-                        </ul>
-                    </div>
+                <div class="flex-card" id="artist-cards-container">
                 </div>
-                <div class="card 3">
-                    <img src="assets/img/3.png" class="user" alt="" />
-                    <h3>Selena Gowes</h3>
-                    <div class="info-artist">
-                        <ul>
-                            <li class="socmed"><a href="https://www.instagram.com/selenagomez/">Instagram</a></li>
-                            <li class="socmed"><a href="https://www.youtube.com/c/selenagomez/">Youtube</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card 4">
-                    <img src="assets/img/4.png" class="user" alt="" />
-                    <h3>Hailee Stempel</h3>
-                    <div class="info-artist">
-                        <ul>
-                            <li class="socmed"><a href="https://www.instagram.com/haileesteinfeld/">Instagram</a></li>
-                            <li class="socmed"><a href="https://www.youtube.com/c/haileesteinfeld/">Youtube</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card 5">
-                    <img src="assets/img/5.png" class="user" alt="" />
-                    <h3>Billie Arisan</h3>
-                    <div class="info-artist">
-                        <ul>
-                            <li class="socmed"><a href="https://www.instagram.com/billieeilish/">Instagram</a></li>
-                            <li class="socmed"><a href="https://www.youtube.com/c/BillieEilish/">Youtube</a></li>
-                        </ul>
-                    </div>
-                </div> -->
             </div>
         </section>
-
         <!-- end my fav -->
 
 
         <!-- start contact me -->
-        <section id="contact">
+        <section>
+            <div class="content" id="tiga">
             <div class="contact-form">
                 <h1>Contact <span>Me</span></h1>
                 <p>Let’s Talk About Everything! Tell me the story of your life.</p>
@@ -238,12 +187,11 @@
                     <input type="submit" name="" value="Submit" class="btn">
                 </form>
             </div>
+        </div>
         </section>
-
         <!-- end contact me -->
     </main>
     <!-- end main -->
-
 
     <!-- start footer -->
     <footer>
@@ -251,7 +199,7 @@
     </footer>
     <!-- end footer -->
 
-    <!-- js toogle -->
+    <!-- customs dom for javascript -->
     <script src="script.js"></script>
 
     <!-- typed cdn -->

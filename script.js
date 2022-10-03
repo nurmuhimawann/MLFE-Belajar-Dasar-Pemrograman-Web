@@ -11,7 +11,6 @@ menuToggle.addEventListener('click', function () {
 
 // loop card
 const container = document.getElementById('artist-cards-container');
-
 const valuesCards = [{
     image: 'assets/img/1.png',
     title: 'Ariana Grandong',
@@ -56,4 +55,5 @@ function returnCards(valuesCards) {
         </div>
     </div>`).join('');
 }
-container.innerHTML = returnCards(valuesCards); 
+
+container.innerHTML = returnCards(valuesCards);
