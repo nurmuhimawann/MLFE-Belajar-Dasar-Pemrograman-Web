@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 html {
@@ -227,13 +227,13 @@ main .container {
 }
 /* end jumbotron */
 
-
 /* start content satu */
 #satu {
     width: 100%;
-    height: 120vh;
+    height: auto;
     padding-top: 80px;
     border-bottom: 1px solid #ddd;
+    overflow: auto;
 }
 
 #about {
@@ -253,144 +253,103 @@ main .container {
 }
 
 /* start aside - card profile */
-/* @import url('https://fonts.googleapis.com/css?family=Montserrat'); */
-
-.content .card-profile {
-    height: 100px;
+.card-profile {
 	font-family: Montserrat;
-}
-
-.card-container h3 {
-    color: white;
-    width: 80%;
-    margin: auto;
-    padding-bottom: 10px;
-    text-align: center;
-    margin-top: 20px;
-    border-bottom: 1px solid white;
-
-}
-
-.card-container h6 {
-	margin: 10px 0;
-	text-transform: uppercase;
-}
-
-.card-container p {
-	font-size: 14px;
-	line-height: 21px;
-}
-
-.card-container {
-	background-color: #231E39;
+    background-color: #231E39;
 	border-radius: 5px;
 	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
 	color: #B3B8CD;
 	padding-top: 30px;
-	position: relative;
 	width: 350px;
 	max-width: 100%;
 	text-align: center;
     margin: 0 0 50px 50px;
 }
-
-.card-container .tag {
-	color: #231E39;
-	background-color: #FEBB0B;
-	border-radius: 3px;
-	font-size: 14px;
-	font-weight: bold;
-	padding: 3px 7px;
-	position: absolute;
-	top: 30px;
-	left: 30px;
+.card-profile .round {
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    padding: 7px;
 }
 
-.card-container .round {
-	border: 1px solid #55ACEE;
-	border-radius: 50%;
-	padding: 7px;
+.card-profile h3 {
+    color: white;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 10px;
+    text-align: center;
+    margin: 20px auto 10px;
+    border-bottom: 1px solid white;
 }
 
-.buttons {
-    margin-top: 10px;
+.card-profile h5 {
+    margin: 5px 0;
 }
 
-button.primary {
-	background-color: #55ACEE;
-	border: 1px solid #55ACEE;
-	border-radius: 3px;
-	color: #231E39;
-	font-family: Montserrat, sans-serif;
-	font-weight: 500;
-	padding: 10px 25px;
+.card-profile p {
+    font-size: 14px;
+    line-height: 21px;
 }
 
-button.primary.ghost {
-	background-color: transparent;
-	color: #02899C;
+.card-title {
+    background-color: #1F1A36;
+    text-align: left;
+    padding: 15px;
+    margin-top: 30px;
 }
 
-.skills {
-	background-color: #1F1A36;
-	text-align: left;
-	padding: 15px;
-	margin-top: 30px;
+.card-title h6 {
+    margin-bottom: 8px;
+    text-transform: uppercase;
 }
 
-.skills ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
+.card-title ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-.skills ul li {
-	border: 1px solid #2D2747;
-	border-radius: 2px;
-	display: inline-block;
-	font-size: 12px;
-	margin: 0 7px 7px 0;
-	padding: 7px;
+.card-title ul li {
+    border: 1px solid #2D2747;
+    border-radius: 2px;
+    display: inline-block;
+    font-size: 12px;
+    margin: 0 7px 7px 0;
+    padding: 7px;
 }
 /* end aside */
 
 /* start article */
 .text-content {
-    display: flex;
     height: auto;
     padding: 0px 25px 0px 40px;
+    box-sizing: border-box;
 }
 
-.content .text-content h5 {
+.text-content h5 {
     text-align: left;
     font-size: 18px;
     line-height: 50px;
 }
-.content .text-content h5 img {
+.text-content h5 img {
     float: left;
     margin-right: 10px;
     width: 50px;
 }
 
-.content .text-content p {
-    clear: both;
+.text-content p {
     margin-top: 10px;
     line-height: 28px;
     text-align: justify;
 }
 /* end article */
-/* end content */
-
+/* end content satu */
 
 /* start card my fav */
-
 #dua {
     width: 100%;
-    height: auto;
-    padding-top: 20px;
+    padding-top: 40px;
     border-bottom: 1px solid #ddd;
 }
-
 
 .title-card h1 {
     margin: 70px 0 0 0;
@@ -439,6 +398,26 @@ button.primary.ghost {
     border-bottom: 1px solid white;
 }
 
+.card .round {
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 50%;
+    padding: 7px;
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+    transition: transform 0.4s ease-in;
+}
+
+.card:hover .round {
+    border: 1px solid rgba(255, 255, 255);
+    transition: all 2s;
+}
+
+.card {
+    transition: .6s ease-out;
+}
+
 .info-artist ul {
     display: flex;
     justify-content: center;
@@ -448,22 +427,26 @@ button.primary.ghost {
 
 .info-artist ul li a {
     text-decoration: none;
-    color: white;
+    color: rgba(255, 255, 255, 0.8);
     margin: 0 10px;
     border-radius: 10px;
-    border: 1px solid white;
+    border: 1px solid rgba(255, 255, 255, 0.8);
     padding: 9px 18px;
 }
 
+.info-artist ul li a:hover {
+    color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(255, 255, 255, 1);
+    transition: all 1s;
+}
 /* end card my fav */
-
 
 /* start contact */
 #tiga {
     width: 100%;
     height: auto;
     padding-top: 80px;
-    margin: 0 20px 0 20px;
+    margin: auto;
 }
 
 .contact-form h1 {
@@ -548,27 +531,64 @@ form textarea {
 
 /* start footer */
 footer {
+    font-family: 'Roboto';
     background-color: #0066ff;
     margin-top: 100px;
-    color: white;
+    color: rgba(255, 255, 255, 0.9);
     text-align: center;
     padding: 20px 0 20px 0;
-    font-size: 18px;
+    font-size: 8px;
 }
 /* end footer */
 
 
 /* Responsive Breeakpoint */
-
-/* ukuran tablet */
-@media screen and (max-width: 768px) {
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
     nav ul {
         width: 50%;
     }
 }
 
-/* ukuran mobile */
-@media screen and (max-width: 576px) {
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    nav ul li:last-child a {
+        width: 70px;
+        text-align: center;
+    }
+
+    .flex-card {
+        flex-direction: row;
+        justify-content: center;
+        padding: 32px 0;
+    }
+
+    .flex-card .card {
+        max-width: 300px;
+        margin: 50px 25px;
+    }
+}
+
+/* Small tablet & mobile large */
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    nav ul li:last-child a {
+        width: 70px;
+        text-align: center;
+    }
+}
+
+/* Small devices (smartphone mobile, max 576px) */
+@media only screen and (max-width: 576px) {
 
     /* start toggle */
     .menu-toggle {
@@ -631,13 +651,56 @@ footer {
         transition: 0.2s all;
     }
     /* end toggle */
+
+    /* section about */
+    aside {
+        width: 100%;
+    }
+
+    .flex-container-satu {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-profile {
+        margin-right: 50px;
+    }
+    /* end about */
+
+    /* start my fav */
+    .flex-card {
+        justify-content: center;
+    }
+    /* end my fav */
+
 }
 
-/* Small devices (landscape phones, 576px and up) */
-@media only screen and (min-width: 576px) { ... }
 
-/* Medium devices (tablets, 768px and up) */
-@media only screen and (min-width: 768px) { ... }
+/* clearfix */
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+     content: " "; /* 1 */
+     display: table; /* 2 */
+}
 
-/* Large devices (desktops, 992px and up) */
-@media only screen and (min-width: 992px) { ... }
+.cf:after {
+    clear: both;
+}
+
+/**
+* For IE 6/7 only
+* Include this rule to trigger hasLayout and contain floats.
+*/
+.cf {
+    *zoom: 1;
+}
