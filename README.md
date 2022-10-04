@@ -2,7 +2,7 @@
   <a href="https://www.w3.org/standards/webdesign/htmlcss">
     <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/></a>&nbsp;&nbsp;
   <a href="https://www.w3.org/standards/webdesign/htmlcss">
-    <img src="	https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/></a>&nbsp;&nbsp;
+    <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/></a>&nbsp;&nbsp;
   <a href="https://www.javascript.com/">
     <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/></a>&nbsp;&nbsp;
 </p>
@@ -21,7 +21,10 @@
 
 Proyek submission untuk kelas **Belajar Dasar Pemrograman Web Dicoding**.
 
-
+<figure>
+    <img src ="https://github.com/nurmuhimawann/MLFE-Belajar-Dasar-Pemrograman-Web/blob/main/assets/img/home.gif?raw=true" alt="home">
+	<figcaption align = "center"><b>Display Home</b></figcaption>
+</figure>
 
 
 ## About
@@ -170,7 +173,7 @@ Berikut kriteria submission yang harus Anda penuhi:
 - [x] Semakin detail dan lengkap website Anda maka nilai submission bisa lebih tinggi.
 
 <figure>
-    <img src ="https://github.com/nurmuhimawann/MLFE-Belajar-Dasar-Pemrograman-Web/blob/main/assets/img/sketsa.png?raw=true" alt="netflix-images">
+    <img src ="https://github.com/nurmuhimawann/MLFE-Belajar-Dasar-Pemrograman-Web/blob/main/assets/img/sketsa.png?raw=true" alt="images">
 	<figcaption align = "center"><b>Sketsa Layout</b></figcaption>
 </figure>
 
