@@ -21,10 +21,13 @@
 
 Proyek submission untuk kelas **Belajar Dasar Pemrograman Web Dicoding**.
 
+<div align="center">
 <figure>
     <img src ="https://github.com/nurmuhimawann/MLFE-Belajar-Dasar-Pemrograman-Web/blob/main/assets/img/home.gif?raw=true" alt="home">
-	<figcaption align = "center"><b>Display Home</b></figcaption>
+    <figcaption align="center"><b>Display Home</b></figcaption>
 </figure>
+</div>
+
 
 
 ## About
@@ -55,18 +58,18 @@ Saya mengimplementasikan JavaScript pada website yang dikembangkan, berikut cara
 
   Pada script.js, function DOM **querySelector()** digunakan untuk **mencari element** input dan navbar yang terdapat pada dokumen HTML dan menyimpannya ke dalam variabel constant.
 
-```javascript
-const menuToggle = document.querySelector('.menu-toggle input');
-const nav = document.querySelector('nav ul');
-```
+  ```javascript
+  const menuToggle = document.querySelector('.menu-toggle input');
+  const nav = document.querySelector('nav ul');
+  ```
 
-​		Kemudian, dengan menambahkan *event handler* menggunakan method **addEventListener()** pada class input, ketika kotak input ditekan maka akan menampilkan display slide yang sebelumnya tersembunyi dari layout.
+  Kemudian, dengan menambahkan *event handler* menggunakan method **addEventListener()** pada class input, ketika kotak input ditekan maka akan menampilkan display slide yang sebelumnya tersembunyi dari layout.
 
-```javascript
-menuToggle.addEventListener('click', function () {
-    nav.classList.toggle('slide');
-});
-```
+  ```javascript
+  menuToggle.addEventListener('click', function () {
+      nav.classList.toggle('slide');
+  });
+  ```
 
 - **My Favorite Artist**
 
@@ -74,50 +77,50 @@ menuToggle.addEventListener('click', function () {
 
   Pertama, saya mencari Id `#artist-cards-container` yang bertindak sebagai parent dari card-nya dan menyimpannya dalam variabel constant bernama `container`. Kemudian, saya juga mengisikan values pada variabel `valuesCard` untuk masing-masing card mulai dari *path-image*, *title*, dan data *social media*.
 
-```javascript
-const container = document.getElementById('artist-cards-container');
-const valuesCards = [{
-    image: 'assets/img/1.png',
-    title: 'Ariana Grandong',
-    instagram: 'https://www.instagram.com/arianagrande/',
-    youtube: 'https://www.youtube.com/c/ArianaGrande/'
-},
-...
-{
-    image: 'assets/img/5.png',
-    title: 'Billie Arisan',
-    instagram: 'https://www.instagram.com/billieeilish/',
-    youtube: 'https://www.youtube.com/c/BillieEilish/'
-}
-];
-```
+  ```javascript
+  const container = document.getElementById('artist-cards-container');
+  const valuesCards = [{
+      image: 'assets/img/1.png',
+      title: 'Ariana Grandong',
+      instagram: 'https://www.instagram.com/arianagrande/',
+      youtube: 'https://www.youtube.com/c/ArianaGrande/'
+  },
+  ...
+  {
+      image: 'assets/img/5.png',
+      title: 'Billie Arisan',
+      instagram: 'https://www.instagram.com/billieeilish/',
+      youtube: 'https://www.youtube.com/c/BillieEilish/'
+  }
+  ];
+  ```
 
-Kemudian, membuat function untuk melakukan return value dengan membuat template card yang disimpan pada div dengan class `card`. values pada variabel `const valuesCard` akan dilooping sesuai urutan dengan mengisikan values pada setiap element yang dibutuhkan pada card.
+  Kemudian, membuat function untuk melakukan return value dengan membuat template card yang disimpan pada div dengan class `card`. values pada variabel `const valuesCard` akan dilooping sesuai urutan dengan mengisikan values pada setiap element yang dibutuhkan pada card.
 
-```javascript
-function returnCards(valuesCards) {
-    return valuesCards.map(valuesCard => `<div class='card'>
-        <img class="round" src="${valuesCard.image}" alt="${valuesCard.title}" />
-        <h3>${valuesCard.title}</h3>
-        <div class="info-artist">
-            <ul>
-                <li class="socmed"><a href="${valuesCard.instagram}">Instagram</a></li>
-                <li class="socmed"><a href="${valuesCard.youtube}">Youtube</a></li>
-            </ul>
-        </div>
-    </div>`).join('');
-}
-```
+  ```javascript
+  function returnCards(valuesCards) {
+      return valuesCards.map(valuesCard => `<div class='card'>
+          <img class="round" src="${valuesCard.image}" alt="${valuesCard.title}" />
+          <h3>${valuesCard.title}</h3>
+          <div class="info-artist">
+              <ul>
+                  <li class="socmed"><a href="${valuesCard.instagram}">Instagram</a></li>
+                  <li class="socmed"><a href="${valuesCard.youtube}">Youtube</a></li>
+              </ul>
+          </div>
+      </div>`).join('');
+  }
+  ```
 
----
+  ---
 
-Terakhir, saya menambahkan element card pada element parent yang ada pada variabel container dengan menggunakan method `innerHTML`. Method ini akan menuliskan ulang tag html dan menggabungkan nilainya pada element. Untuk menjalankannya, tinggal memanggil function `returnCards` yang sudah di custom sebelumnya.
+  Terakhir, saya menambahkan element card pada element parent yang ada pada variabel container dengan menggunakan method `innerHTML`. Method ini akan menuliskan ulang  tag html dan menggabungkan nilainya pada element. Untuk menjalankannya, tinggal memanggil function `returnCards` yang sudah di custom sebelumnya.
 
-```javascript
-container.innerHTML = returnCards(valuesCards);
-```
+  ```javascript
+  container.innerHTML = returnCards(valuesCards);
+  ```
 
----
+  ---
 
 - **Gallery-Box**
 
@@ -172,10 +175,12 @@ Berikut kriteria submission yang harus Anda penuhi:
 - [x] Tema yang ditampilkan bebas, **kecuali** tema Bandung.
 - [x] Semakin detail dan lengkap website Anda maka nilai submission bisa lebih tinggi.
 
+<div align="center">
 <figure>
     <img src ="https://github.com/nurmuhimawann/MLFE-Belajar-Dasar-Pemrograman-Web/blob/main/assets/img/sketsa.png?raw=true" alt="images">
 	<figcaption align = "center"><b>Sketsa Layout</b></figcaption>
 </figure>
+</div>
 
 
 
