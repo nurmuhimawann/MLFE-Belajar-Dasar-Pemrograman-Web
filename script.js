@@ -1,11 +1,9 @@
 // toggle menu
 const menuToggle = document.querySelector('.menu-toggle input');
 const nav = document.querySelector('nav ul');
-const li = document.querySelectorAll('nav ul li a');
 
 menuToggle.addEventListener('click', function () {
     nav.classList.toggle('slide');
-    li.classList.toggle('slide');
 });
 
 
@@ -41,7 +39,7 @@ const valuesCards = [{
     instagram: 'https://www.instagram.com/billieeilish/',
     youtube: 'https://www.youtube.com/c/BillieEilish/'
 }
-]
+];
 
 function returnCards(valuesCards) {
     return valuesCards.map(valuesCard => `<div class='card'>
@@ -57,3 +55,58 @@ function returnCards(valuesCards) {
 }
 
 container.innerHTML = returnCards(valuesCards);
+
+
+// loop gallery-box
+const column1 = document.getElementById('column1');
+const valuesImage = [{
+    img: 'assets/img/gallery-box/1.jpeg',
+}, 
+{
+    img: 'assets/img/gallery-box/2.jpg',
+}, 
+{
+    img: 'assets/img/gallery-box/3.jpg',
+}
+];
+
+const column2 = document.getElementById('column2');
+const valuesImage2 = [{
+    img: 'assets/img/gallery-box/4.jpg',
+}, 
+{
+    img: 'assets/img/gallery-box/5.jpg',
+}, 
+{
+    img: 'assets/img/gallery-box/6.jpg',
+}, 
+{
+    img: 'assets/img/gallery-box/7.jpg',
+}
+];
+
+const column3 = document.getElementById('column3');
+const valuesImage3 = [{
+    img: 'assets/img/gallery-box/8.jpg',
+}, 
+{
+    img: 'assets/img/gallery-box/9.jpg',
+}, 
+{
+    img: 'assets/img/gallery-box/10.jpg',
+}, 
+{
+    img: 'assets/img/gallery-box/11.jpg',
+}
+];
+
+function returnImage(valuesImage) {
+    return valuesImage.map(valuesImage => `<div class='image-item'>
+            <img src="${valuesImage.img}" alt="" />
+            <div class="overlay"></div>
+        </div>`).join('');
+};
+
+column1.innerHTML = returnImage(valuesImage);
+column2.innerHTML = returnImage(valuesImage2);
+column3.innerHTML = returnImage(valuesImage3);

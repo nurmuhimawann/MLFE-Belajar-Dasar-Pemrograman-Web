@@ -10,6 +10,9 @@
     <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- kursorJS -->
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+
     <!-- CDN Awesome for badge icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -32,8 +35,9 @@
             </div>
             <ul>
                 <li><a href="#satu">AboutMe</a></li>
-                <li><a href="#dua">MyFavorite</a></li>
-                <li><a href="#tiga">ContactMe</a></li>
+                <li><a href="#dua">Gallery</a></li>
+                <li><a href="#tiga">MyFavorite</a></li>
+                <li><a href="#empat">ContactMe</a></li>
                 <li id="btn"><a href="#">Say,hi👋🏻</a></li>
             </ul>
             <div class="menu-toggle">
@@ -60,7 +64,8 @@
                             <li><a href="https://www.linkedin.com/in/nurmuhimawann/" class="fa fa-linkedin"></a></li>
                             <li><a href="https://www.instagram.com/mawann_/" class="fa fa-instagram"></a></li>
                             <li><a href="https://twitter.com/nurmuhimawann" class="fa fa-twitter"></a></li>
-                            <li><a href="https://www.youtube.com/channel/UCW3buJ3uynHE8_dqvFsNCQw/" class="fa fa-youtube"></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCW3buJ3uynHE8_dqvFsNCQw/"
+                                    class="fa fa-youtube"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -113,11 +118,14 @@
                             <article>
                                 <h5 class="cf"><img src="assets/img/tick.png" alt="">Me</h5>
                                 <p>
-                                    Hello everyone, my name is Nur Muhammad Himawan. you can call me mawan. I'm from
+                                    Hello everyone, my name is Nur Muhammad Himawan. but simply call me Mawan. I'm from
                                     Banyuwangi
                                     and currently studying in the Information Systems, Faculty of Computer Science,
                                     University
                                     of Jember.
+                                    I love playing with data and visualization, especially when it comes to data for
+                                    greater good. Besides data analytics, sometimes I do web design and digital
+                                    illustrations.
                                 </p>
                             </article> <br>
                             <article>
@@ -156,9 +164,26 @@
         </section>
         <!-- end about me -->
 
-        <!-- start my fav -->
+        <!-- start gallery box -->
         <section>
             <div id="dua">
+                <div class="title-gallery">
+                    <h1 class="title-gallery">My <span>Gallery</span></h1>
+                </div>
+                <div class="gallery-box">
+                    <div class="image-gallery">
+                        <div class="column" id="column1"></div>
+                        <div class="column" id="column2"></div>
+                        <div class="column" id="column3"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end gallery box -->
+
+        <!-- start my fav -->
+        <section>
+            <div id="tiga">
                 <div class="title-card">
                     <h1>My Favorite <span>Artist</span></h1>
                 </div>
@@ -170,7 +195,7 @@
 
         <!-- start contact me -->
         <section>
-            <div class="content" id="tiga">
+            <div class="content" id="empat">
                 <div class="contact-form">
                     <h1>Contact <span>Me</span></h1>
                     <p>Let’s Talk About Everything! Tell me the story of your life.</p>
@@ -196,6 +221,10 @@
     </footer>
     <!-- end footer -->
 
+
+    <!-- cursor js -->
+    <script src="https://unpkg.com/kursor"></script>
+
     <!-- customs dom for javascript -->
     <script src="script.js"></script>
 
@@ -208,6 +237,13 @@
             backSpedd: 80,
             loop: true
         });
+
+        new kursor({
+            type: 4,
+            removeDefaultCursor: true,
+            color: '#0066ff'
+        })
+
     </script>
 </body>
 

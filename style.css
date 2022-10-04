@@ -344,8 +344,78 @@ main .container {
 /* end article */
 /* end content satu */
 
-/* start card my fav */
+
+/* start gallery-box */
 #dua {
+    width: 100%;
+    padding-top: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.title-gallery h1 {
+    margin: 70px 0 50px 0;
+    font-size: 2.8rem;
+    text-align: center;
+    color: black;
+}
+
+.title-gallery h1 span {
+    color: #0066ff;
+}
+
+.gallery-box {
+    padding: 40px 5%;
+    max-width: 1100px;
+    box-sizing: border-box;
+    margin: auto 80px;
+}
+
+/* Responsive image gallery rules begin*/
+
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.image-gallery .column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.image-item img {
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* overlay styles */
+.image-item {
+    position: relative;
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+}
+
+.image-item:hover .overlay {
+    opacity: 0;
+    transition: all .5s ease-in;
+}
+/* end gallery-box */
+
+
+/* start card my fav */
+#tiga {
     width: 100%;
     padding-top: 40px;
     border-bottom: 1px solid #ddd;
@@ -442,7 +512,7 @@ main .container {
 /* end card my fav */
 
 /* start contact */
-#tiga {
+#empat {
     width: 100%;
     height: auto;
     padding-top: 80px;
@@ -546,12 +616,20 @@ footer {
 /* Large devices (desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     nav ul {
-        width: 50%;
+        width: 60%;
+    }
+
+    .image-gallery {
+        flex-direction: row;
     }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+    nav ul {
+        width: 60%;
+    }
+
     nav ul li:last-child a {
         width: 70px;
         text-align: center;
@@ -566,6 +644,10 @@ footer {
     .flex-card .card {
         max-width: 300px;
         margin: 50px 25px;
+    }
+
+    .image-gallery {
+        flex-direction: row;
     }
 }
 
@@ -584,6 +666,10 @@ footer {
     nav ul li:last-child a {
         width: 70px;
         text-align: center;
+    }
+
+    .gallery-box {
+        margin: auto 80px;
     }
 }
 
