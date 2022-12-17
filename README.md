@@ -1,25 +1,7 @@
-<p align='center'>
-  <a href="https://www.w3.org/standards/webdesign/htmlcss">
-    <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/></a>&nbsp;&nbsp;
-  <a href="https://www.w3.org/standards/webdesign/htmlcss">
-    <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/></a>&nbsp;&nbsp;
-  <a href="https://www.javascript.com/">
-    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/></a>&nbsp;&nbsp;
-</p>
+# Submission Belajar Dasar Pemrograman Web Dicoding
+🌀 #8. "Belajar Dasar Pemrograman Web"
 
-<div align="center">
-
-| Profile       |                                           |
-| ------------- | ----------------------------------------- |
-| Nama          | Nur Muhammad Himawan                      |
-| Learning Path | Machine Learning & Front End Development  |
-| Progam        | Studi Independen Batch 3 - Kampus Merdeka |
-
-</div>
-
-# MLFE - Belajar Dasar Pemrograman Web
-
-Proyek submission untuk kelas **Belajar Dasar Pemrograman Web Dicoding**.
+<br>
 
 <div align="center">
 <figure>
